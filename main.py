@@ -112,7 +112,7 @@ class RolimonsAPI:
     def get_recent_ads(self) -> List:
         try:
             response = requests.get("https://api.rolimons.com/tradeads/v1/getrecentads",
-                                  proxies=self.get_proxy_dict(), headers=get_headers(), timeout=15)
+                                  proxies=self._get_proxy_dict(), headers=get_headers(), timeout=15)
             if response.ok:
                 return response.json().get('trade_ads', [])
         except Exception as e:
@@ -146,7 +146,7 @@ class RolimonsAPI:
     def get_avatar(self, user_id: int) -> Optional[str]:
         try:
             url = f"https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds={user_id}&size=150x150&format=Png&isCircular=false"
-            response = requests.get(url, proxies=self.get_proxy_dict(), headers=get_headers(), timeout=10)
+            response = requests.get(url, proxies=self._get_proxy_dict(), headers=get_headers(), timeout=10)
             if response.ok:
                 data = response.json()
                 if data.get('data'):
