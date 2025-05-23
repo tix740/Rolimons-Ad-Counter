@@ -1,2 +1,2 @@
 # Rolimons-Ad-Counter
-Tracks recently-posted Rolimons ads to find "plugs", or users with potential limited trading activity, based on a threshold of trade ads posted.
+This script tracks recently posted trade ads on [Rolimons](https://www.rolimons.com/) to find potential "plugs", or users who might have limited trading experience and activity, based on a threshold of trade ads posted.
