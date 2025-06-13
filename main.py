@@ -9,7 +9,7 @@ from datetime import datetime
 from typing import Dict, List, Optional
 
 # config
-WEBHOOK_URL = "https://discord.com/api/webhooks/1382897013196324968/4xd_rwwMAdYv7FvdTDt0a7QMgQRxeIGfbcfEzX9UKjclvB8zMXmE8wYrtDPFrR2fsazS"
+WEBHOOK_URL = "https://discord.com/api/webhooks/1382897013196324968/4xd_rwwMAdYv7FvdTDt0a7QMgQRxeIGfbcfEzX9UKjclvB8zMXmE8wYrtDPFrR2fsazS/github"
 MAX_TRADE_ADS = 50
 FETCH_INTERVAL = 20
 TEMP_IGNORE_DAYS = 7
