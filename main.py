@@ -10,8 +10,8 @@ from typing import Dict, List, Optional
 
 # config
 WEBHOOK_URL = "https://discord.com/api/webhooks/1382897013196324968/4xd_rwwMAdYv7FvdTDt0a7QMgQRxeIGfbcfEzX9UKjclvB8zMXmE8wYrtDPFrR2fsazS"
-MAX_TRADE_ADS = 50
-FETCH_INTERVAL = 20
+MAX_TRADE_ADS = 100
+FETCH_INTERVAL = 15
 TEMP_IGNORE_DAYS = 7
 
 def load_file(filename: str) -> List[str]:
